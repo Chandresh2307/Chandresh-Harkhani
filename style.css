@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans&display=swap');
+
+/* navigation menu */
+.navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #3b7dd8;
+    color: white;
+    justify-content: space-between;
+    width: 90vw;
+    padding: 0 5%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.navbar .logo {
+    font-size: 1.4rem;
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: lighter;
+}
+
+.menu-btn>i {
+    color: #fff;
+    font-size: 27px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 40px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#click {
+    display: none;
+}
+
+#click:checked~ul {
+    left: 0%;
+    transition: all 0.3s ease;
+}
+
+
+.navbar ul li a:hover {
+    color: #000;
+}
+
+#click:checked~.menu-btn i::before {
+    content: "\f00d";
+    transition: all 0.5s ease-in-out;
+}
+
+/* nevbar is over  */
+
+
+
+/* section-1 is start  */
+
+.section-1 {
+    height: 90vh;
+    padding-top: 100px;
+    display: flex;
+    background-color: #3b7dd8;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.section-1 h1 {
+    font-size: 4rem;
+    margin-top: 70%;
+    padding-left: 50%;
+    color: #fff;
+}
+
+.section-1 h2 {
+    font-size: 3rem;
+    margin: 2px 0;
+    padding-left: 50%;
+    color: #fff;
+
+}
+
+
+/* sec-2 is start  */
+/* profile section start  */
+.sec-2 {
+    font-size: x-large;
+    padding-top: 100px;
+}
+
+.profile {
+    display: flex;
+    font-family: 'Radio Canada', sans-serif;
+
+}
+
+.profile>.box-1>img {
+    height: 200px;
+    width: 160px;
+    border-radius: 50%;
+
+}
+
+.box-1 {
+    margin: 0 9%;
+    text-align: center;
+}
+
+.box-1 p {
+    padding-top: 5px;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.box-2 {
+    margin: 0 5%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.6rem;
+}
+
+.box-3 {
+    text-align: center;
+    margin: 0 5%;
+    margin-top: 3%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.6rem;
+}
+
+.box-3>p {
+    margin-bottom: 6px;
+
+}
+
+
+/* sec-3 is start  */
+/* parents */
+
+/* .sec-3 {
+    padding-top: 120px;
+}
+
+.parents {
+    display: flex;
+    justify-content: space-around;
+}
+
+.photo-1 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Century Gothic', sans-serif;
+
+}
+
+.photo-2 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.photo-1>img {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+}
+
+
+.photo-2>img {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+} */
+
+
+/* about */
+.sec-4 {
+    padding-top: 100px;
+}
+
+.about {
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+.about h1 {
+    font-size: 3rem;
+    margin: 25px;
+}
+
+.about p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+/* contact */
+.sec-5 {
+    padding-top: 100px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact .img-1 {
+    height: 40px;
+    width: 40px;
+}
+
+.contact .img-2 {
+    height: 45px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.contact img:hover {
+    height: 50px;
+    width: 70px;
+    transition: all 0.1s ease;
+}
+
+.contact h1 {
+    font-size: 3rem;
+    margin: 20px;
+}
+
+
+/* footer  */
+footer {
+    height: 130px;
+    padding-top: 150px;
+    text-align: center;
+    font-weight: lighter 300;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+hr {
+    width: 30%;
+    margin: auto;
+}
+
+
+
+
+
+/* mediaquery @ start  */
+
+@media (max-width:912px) {
+
+
+    /* navigation menu */
+
+    .navbar>.logo {
+        padding-left: 50px;
+    }
+
+    .navbar ul {
+        position: fixed;
+        background-color: #1b1b1b;
+        top: 100px;
+        left: -100%;
+        display: block;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        margin: 40px 0;
+    }
+
+    .navbar ul li a:hover {
+        color: #00ffff;
+    }
+
+    .menu-btn>i {
+        display: block;
+    }
+
+
+
+    /* intro  */
+    .section-1 {
+        justify-content: space-around;
+    }
+
+    .section-1 h1 {
+        padding-left: 0;
+    }
+
+    .section-1 h2 {
+        padding-left: 0;
+    }
+
+
+
+    /* .profile  */
+    .profile {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .box-1 {
+        text-align: center;
+    }
+
+    .box-2 {
+        margin-top: 35px;
+    }
+
+    .box-3 {
+        margin-top: 38px;
+    }
+
+    /* parents  */
+    .photo-1>img {
+        margin: 0px 0px;
+    }
+
+    .photo-2>img {
+        margin: 0px 0px;
+    }
+
+    .photo-2 {
+        margin-top: 15px;
+    }
+
+    .parents {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* about  */
+
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0px;
+    }
+
+    /* contact */
+    hr {
+        width: 70%;
+    }
+}
